@@ -48,6 +48,11 @@ function addNewCar(car){
 }
 
 
+function addTimeline(car){
+	var sTempTimeline = '<div class="cd-timeline-block"><div class="cd-timeline-img"><img src="" alt="Picture"></div><div class="cd-timeline-content"><h2>Title of section 1</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p><span class="cd-date">'+car.start+ ' - ' +car.end+'</span></div> </div>';
+	$('#cd-timeline').append(sTempTimeline);
+}
+
 $("#addButton").click(function() {
   inputs = $('.car-input');
   newCar = {
@@ -57,4 +62,5 @@ $("#addButton").click(function() {
 				end:inputs[4].value
 			}
 	addNewCar(newCar);
+	addTimeline(newCar);
 });
