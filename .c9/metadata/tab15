@@ -1,0 +1,1 @@
+{"filter":false,"title":"www - Stopped","tooltip":"www - Stopped","undoManager":{"mark":0,"position":-1,"stack":[]},"output":{"id":"output70182","width":0,"height":0,"scrollTop":-1,"config":{"debug":true,"env":{"DEBUG":"main"},"command":"bin/www","runner":"Shell command","name":"www"}},"timestamp":1427475447289,"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
