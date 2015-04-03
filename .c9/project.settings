@@ -26,6 +26,31 @@
         "configs": {
             "@inited": "true",
             "json()": {
+                "express": {
+                    "command": "bin/www",
+                    "cwd": "/",
+                    "debug": true,
+                    "env": {
+                        "DEBUG": "main"
+                    },
+                    "name": "express",
+                    "runner": "Shell command"
+                },
+                "mongo": {
+                    "command": "mongod --nojournal --dbpath=./data",
+                    "cwd": "/",
+                    "debug": false,
+                    "name": "mongo",
+                    "runner": "Shell command"
+                },
+                "start express": {
+                    "command": "bin/www",
+                    "cwd": "/serverside",
+                    "debug": false,
+                    "env": {},
+                    "name": "start express",
+                    "runner": "Node.js (default)"
+                },
                 "www": {
                     "command": "bin/www",
                     "cwd": "/",
